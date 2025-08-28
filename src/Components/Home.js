@@ -4,6 +4,7 @@ import logo from '../softgrade-logo.svg';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
@@ -17,10 +18,20 @@ const Home = () => {
             <img src={logo} alt="Softgrade logo" className="nav-logo-image" />
             <h2>Softgrade Design Lab</h2>
           </div>
-          <ul className="nav-menu">
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+          <button
+            className="nav-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((prev) => !prev)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul className={`nav-menu ${menuOpen ? 'open' : ''}`}>
+            <li><a href="#services" onClick={() => setMenuOpen(false)}>Services</a></li>
+            <li><a href="#work" onClick={() => setMenuOpen(false)}>Work</a></li>
+            <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
           </ul>
         </div>
       </nav>
