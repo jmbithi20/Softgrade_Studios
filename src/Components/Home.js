@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
+import logo from '../softgrade-logo.svg';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -13,6 +14,7 @@ const Home = () => {
       <nav className="navbar">
         <div className="nav-container">
           <div className="nav-logo">
+            <img src={logo} alt="Softgrade logo" className="nav-logo-image" />
             <h2>Softgrade Design Lab</h2>
           </div>
           <ul className="nav-menu">
@@ -81,7 +83,7 @@ const Home = () => {
 
       <footer className="footer">
         <div className="container footer-inner">
-          <p>© 2024 Softgrade Design Lab</p>
+          <p>© 2025 Softgrade Design Lab</p>
         </div>
       </footer>
     </div>
