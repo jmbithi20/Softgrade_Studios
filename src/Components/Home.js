@@ -43,8 +43,32 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-image">
-            <div className="profile-placeholder" aria-hidden="true">
-              <span>✨</span>
+            <div className="design-showcase" aria-hidden="true">
+              <div className="device-frame">
+                <div className="device-header">
+                  <span></span><span></span><span></span>
+                </div>
+                <div className="device-content">
+                  <div className="bar b1"></div>
+                  <div className="bar b2"></div>
+                  <div className="bar b3"></div>
+                  <div className="tiles">
+                    <div className="tile t1"></div>
+                    <div className="tile t2"></div>
+                    <div className="tile t3"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="color-swatches">
+                <span className="swatch s1"></span>
+                <span className="swatch s2"></span>
+                <span className="swatch s3"></span>
+              </div>
+              <svg className="pen-icon" width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12l7-7m-4.5 1.5l3 3" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round"/>
+                <path d="M3 21l3.5-1L20 6.5 17.5 4 5 16.5 4 20z" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.6)" strokeWidth="1.2"/>
+                <circle cx="12" cy="12" r="1.2" fill="#f59e0b"/>
+              </svg>
             </div>
           </div>
         </div>
